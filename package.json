@@ -1,0 +1,30 @@
+{
+    "name": "Yash Dayama Task",
+    "version": "1.0.0",
+    "description": "Yash Dayama Backend",
+    "main": "src/app.js",
+    "scripts": {
+        "start": "env-cmd -f ./config/dev.env node src/app.js",
+        "dev": "env-cmd -f ./config/dev.env nodemon src/app.js",
+        "seed": "env-cmd -f ./config/dev.env node -e \"require('./src/db/mongoose').initConnection(() => require('./src/db/seeders')()); \""
+    },
+    "keywords": [],
+    "author": "Yash Dayama",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "chalk": "^4.1.2",
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "jsonwebtoken": "^9.0.0",
+        "moment": "^2.29.4",
+        "mongoose": "^7.0.3",
+        "morgan": "^1.10.0",
+        "validator": "^13.9.0",
+        "winston": "^3.14.2"
+    },
+    "devDependencies": {
+        "env-cmd": "^10.1.0",
+        "nodemon": "^2.0.20"
+    }
+}
