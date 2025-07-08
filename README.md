@@ -27,8 +27,7 @@ A simple web application for managing employee leaves and attendance, with separ
 
 1. **Clone the repository:**
    ```bash
-   git clone <repo-url>
-   cd <repo-folder>
+   git clone https://github.com/yash-dayama/Yash-Dayama-EMS.git
    ```
 
 2. **Install backend dependencies:**
